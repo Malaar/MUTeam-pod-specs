@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   
   s.source   = { :git => 'https://yriybosov@bitbucket.org/yriybosov/musocialengine.git', :commit => '8dc265f5ef7a' }
   
-  s.source_files = 'SocialEngine/API/**/*.{h,m,c}', 'SocialEngine/DXSocialEngine/**/*.{h,m,c}'
-  s.resources    = 'SocialEngine/API/SCFacebook/Facebook/FBDialog.bundle', '/SocialEngine/API/Twitter/Twitter.bundle'
+  s.source_files = 'MUSocialEngine/API/**/*.{h,m,c}', 'MUSocialEngine/DXSocialEngine/**/*.{h,m,c}'
+  s.resources    = 'MUSocialEngine/API/SCFacebook/Facebook/FBDialog.bundle', '/SocialEngine/API/Twitter/Twitter.bundle'
   
   s.frameworks  = 'QuartzCore', 'Security', 'Twitter', 'Accounts'
   s.libraries   = 'xml2'
