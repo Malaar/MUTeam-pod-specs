@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
   s.frameworks   = 'QuartzCore', 'CoreData'
   
   s.dependency 'AFNetworking','0.10.1' 
+  s.prefix_header_contents = '#import "MUKit.h"'
 
 end
