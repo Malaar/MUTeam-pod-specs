@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MUKitReal'
-  s.version  = '0.0.9'
+  s.version  = '0.0.8.1'
   s.platform = :ios
   s.license  = 'Apache License, Version 2.0'
   s.homepage = 'https://github.com/Malaar/MUKit'
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   
   s.frameworks   = 'QuartzCore', 'CoreData'
   
-  s.dependency 'AFNetworking', '0.10.1'
+  s.dependency 'AFNetworking'
   
 end
