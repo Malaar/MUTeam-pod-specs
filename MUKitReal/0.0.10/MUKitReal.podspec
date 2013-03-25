@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
 	s.requires_arc = false
 
 	s.dependency 'AFNetworking', '0.10.1'
-	s.dependency 'BlocksKit'
 
-	s.subspec 'arc' do |sp|
+	s.subspec 'compoundCell' do |sp|
 		sp.source_files = 'MUKit/MUTableDisposer/MUCompoundCell/**/*.{h,m}'
 		sp.requires_arc = true
+		sp.dependency 'BlocksKit'
 	end
   
 end
