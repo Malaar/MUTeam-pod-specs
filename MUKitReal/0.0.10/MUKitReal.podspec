@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   
 	s.source   = { :git => 'git://github.com/Malaar/MUKit.git', :commit => '37cc434efb82b770bc7306f8afee09f7a4be0979' }
   
-	s.source_files = FileList['MUKit/**/*.{h,m}'].exclude(/MUCompoundCell/)
+	s.source_files = FileList['MUKit/**/*.{h,m}'].exclude(/MUCompoundCell/).exclude(/MUModalView/)
 	s.frameworks   = 'QuartzCore', 'CoreData'
 	s.requires_arc = false
 
@@ -20,4 +20,8 @@ Pod::Spec.new do |s|
 		sp.dependency 'BlocksKit'
 	end
   
+	s.subspec 'modalView' do |sp|
+		sp.source_files = 'MUKit/MUControls/MUModalView/**/*.{h,m}'
+		sp.requires_arc = true
+	end
 end
