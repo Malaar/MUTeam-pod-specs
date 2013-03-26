@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.homepage = 'https://github.com/Malaar/MUKit'
 	s.author   = 'MUKitTeam'
   
-	s.source   = { :git => 'git://github.com/Malaar/MUKit.git', :commit => 'd470dc1357f872e3bc9d683955185780a3516e2d' }
+	s.source   = { :git => 'git://github.com/Malaar/MUKit.git', :commit => 'f9c27b1e2f3e61def94e2473ce54aaf716a9b3ba' }
   
 	s.source_files = FileList['MUKit/**/*.{h,m}'].exclude(/MUCompoundCell/).exclude(/MUModalView/)
 	s.frameworks   = 'QuartzCore', 'CoreData'
