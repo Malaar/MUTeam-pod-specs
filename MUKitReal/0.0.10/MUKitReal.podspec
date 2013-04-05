@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
 	s.homepage = 'https://github.com/Malaar/MUKit'
 	s.author   = 'MUKitTeam'
   
-	s.source   = { :git => 'git://github.com/Malaar/MUKit.git', :commit => 'f9c27b1e2f3e61def94e2473ce54aaf716a9b3ba' }
+	s.source   = { :git => 'git://github.com/Malaar/MUKit.git', :commit => '37a256aabc2c9fbf8a1f82834ac28d59a2c972e3' }
   
-	s.source_files = FileList['MUKit/**/*.{h,m}'].exclude(/MUCompoundCell/).exclude(/MUModalView/)
+	s.source_files = FileList['MUKit/**/*.{h,m}'].exclude(/MUCompoundCell/).exclude(/MUModalView/).exclude(/MUPaging/)
 	s.frameworks   = 'QuartzCore', 'CoreData'
 	s.requires_arc = false
 
@@ -24,4 +24,10 @@ Pod::Spec.new do |s|
 		sp.source_files = 'MUKit/MUControls/MUModalView/**/*.{h,m}'
 		sp.requires_arc = true
 	end
+
+	s.subspec 'paging' do |sp|
+		sp.source_files = 'MUKit/MUPaging/**/*.{h,m}'
+		sp.requires_arc = true
+	end
+
 end
