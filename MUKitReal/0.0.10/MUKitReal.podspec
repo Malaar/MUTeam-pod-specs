@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 	s.requires_arc = false
 
 	s.dependency 'AFNetworking', '0.10.1'
+	s.dependency 'Reachability'
 
 	s.subspec 'compoundCell' do |sp|
 		sp.source_files = 'MUKit/MUTableDisposer/MUCompoundCell/**/*.{h,m}'
