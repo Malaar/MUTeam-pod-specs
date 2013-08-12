@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.frameworks   = 'QuartzCore', 'CoreData'
 	s.requires_arc = false
 
-	s.dependency 'AFNetworking', '0.10.1'
+	s.dependency 'AFNetworking', '~> 0.10.1'
 
 	s.subspec 'compoundCell' do |sp|
 		sp.source_files = 'MUKit/MUTableDisposer/MUCompoundCell/**/*.{h,m}'
